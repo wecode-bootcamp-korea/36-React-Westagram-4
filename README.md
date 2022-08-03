@@ -6,12 +6,12 @@ Westagram in React.ver
 HTML / SCSS / React.JS
 
 ### Use Library
-React.js,
-create-react-app
-react-router-dom
-scss
-eslint
-prettier
+React.js <br>
+create-react-app <br>
+react-router-dom <br>
+scss <br>
+eslint <br>
+prettier <br>
 
 ### Name of Team Members
 - Bosung Moon
