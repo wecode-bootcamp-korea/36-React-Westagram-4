@@ -14,18 +14,18 @@ const Router = () => {
     return (
     <BrowserRouter>
     <Routes>
-        <Route path='/login-bosung' element={<LoginBosung />} />
-        <Route path='/main-bosung' element={<MainBosung />} />
+        <Route path="/login-bosung" element={<LoginBosung />} />
+        <Route path="/main-bosung" element={<MainBosung />} />
 
-        <Route path='/login-kyeongyong' element={<LoginKyeongyong />} />
-        <Route path='/main-kyeongyong' element={<MainKyeongyong />} />
+        <Route path="/login-kyeongyong" element={<LoginKyeongyong />} />
+        <Route path="/main-kyeongyong" element={<MainKyeongyong />} />
 
-        <Route path='/login-dahyun' element={<LoginDahyun />} />
-        <Route path='/main-dahyun' element={<MainDahyun />} />
+        <Route path="/login-dahyun" element={<LoginDahyun />} />
+        <Route path="/main-dahyun" element={<MainDahyun />} />
 
     </Routes>
     </BrowserRouter>
     );
 };
 
-export default Router;
+export default Router
