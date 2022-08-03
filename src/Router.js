@@ -4,11 +4,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LoginBosung from './pages/bosungMoon/Login/Login';
 import MainBosung from './pages/bosungMoon/Main/Main';
 
-import LoginKyeongyong from './pages/KyeongyongSong/Login/Login';
-import MainKyeongyong from './pages/KyeongyongSong/Main/Main';
+import LoginKyeongyong from './pages/kyeongyongSong/Login/Login';
+import MainKyeongyong from './pages/kyeongyongSong/Main/Main';
 
-import LoginDahyun from './pages/DahyunKim/Login/Login';
-import MainDahyun from './pages/DahyunKim/Main/Main';
+import LoginDahyun from './pages/dahyunKim/Login/Login';
+import MainDahyun from './pages/dahyunKim/Main/Main';
 
 const Router = () => {
   return (
