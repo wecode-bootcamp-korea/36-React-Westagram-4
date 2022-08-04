@@ -1,0 +1,125 @@
+.mainRight {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  width: 400px;
+
+  .mainRightHead img {
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+  }
+
+  .mainRightHead {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    height: 50px;
+    margin-bottom: 25px;
+    .rightHead {
+      padding-left: 15px;
+    }
+  }
+  .etc {
+    font-size: 15px;
+    color: lightgray;
+    margin-top: 15px;
+  }
+
+  .mainRightBottom {
+    border: 1.5px solid #e6e6e6;
+    background-color: white;
+    margin-top: 15px;
+
+    .realLast {
+      padding: 0 3px;
+      display: flex;
+      margin: 8px 8px;
+      height: 38px;
+      align-items: center;
+      justify-content: space-between;
+      .bottomLast {
+        display: flex;
+        .rightBottomBottom {
+          padding-left: 15px;
+        }
+      }
+      .bottomCenter {
+        font-size: 14px;
+        color: blueviolet;
+        cursor: pointer;
+      }
+    }
+    .mainBottomBottom img {
+      width: 30px;
+      border-radius: 50%;
+      height: 30px;
+    }
+
+    .mainBottomHead {
+      margin-top: 15px;
+
+      .rightBottomHead {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+        align-items: center;
+        height: 35px;
+        .rightBottomHeadFont1 {
+          color: lightgray;
+        }
+        .rightBottomHeadFont2 {
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .mainRightMiddle {
+    background-color: white;
+    border: 1.5px solid #e6e6e6;
+
+    .rightMiddleHead {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15px;
+      align-items: center;
+      height: 35px;
+      .rightMiddleHeadFont1 {
+        color: lightgray;
+      }
+
+      .rightMiddleHeadFont12 {
+        color: black;
+        font-weight: bold;
+      }
+    }
+
+    .mainMiddleMiddle {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      padding: 0 15px;
+      height: 50px;
+      .rightMiddle {
+        padding-left: 15px;
+        .time {
+          font-size: 13px;
+          color: lightgray;
+        }
+      }
+    }
+
+    .mainMiddleMiddle img {
+      width: 30px;
+      border-radius: 50%;
+      height: 30px;
+    }
+  }
+
+  .bold {
+    font-weight: bold;
+    font-size: 15px;
+  }
+}

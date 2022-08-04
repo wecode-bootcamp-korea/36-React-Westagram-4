@@ -1,0 +1,79 @@
+@mixin mainScss {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  min-height: 1000px;
+  padding-top: 70px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  height: 60px;
+}
+
+.instatopleft {
+  display: flex;
+
+  .mainBorder {
+    border-right: 3px solid black;
+    margin-right: 7px;
+  }
+
+  .instaTopImgInsta {
+    width: 25px;
+    margin-right: 10px;
+  }
+
+  .maintitle {
+    font-family: "Lobster", cursive;
+    font-size: 25px;
+  }
+}
+
+.barBorder {
+  display: flex;
+  align-items: center;
+  border: 2px solid #e6e6e6;
+  background-color: #e6e6e6;
+  border-radius: 20px;
+  padding: 10px;
+  width: 300px;
+  justify-content: center;
+  .search {
+    position: relative;
+    width: 12px;
+    margin-left: 70px;
+  }
+  #searchbar {
+    text-align: center;
+    border: none;
+    margin-left: -60px;
+    outline: none;
+    background-color: #e6e6e6;
+  }
+}
+
+.instaTopImgExplore {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.instaTopImgHeart {
+  width: 25px;
+  margin-right: 10px;
+}
+.instaTopImgMypage {
+  width: 25px;
+}
+
+///////전체에 주는것
+
+.main {
+  @include mainScss;
+}
