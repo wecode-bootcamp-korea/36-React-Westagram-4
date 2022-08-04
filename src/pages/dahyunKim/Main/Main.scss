@@ -1,0 +1,218 @@
+.mainApp {
+  background-color: rgb(245, 245, 245);
+
+  header {
+    height: 70px;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgb(235, 235, 235);
+
+    .header-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1024px;
+      height: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+
+      .logo-group {
+        display: flex;
+        align-items: center;
+        position: relative;
+        font-size: 20px;
+
+        .logo-title {
+          margin-left: 20px;
+          font-size: 20px;
+
+          &::before {
+            content: '|';
+            position: absolute;
+            bottom: 2px;
+            left: 28px;
+            font-weight: 200;
+          }
+        }
+      }
+
+      .search-group {
+        position: relative;
+        color: rgb(205, 205, 205);
+
+        i {
+          position: absolute;
+          top: 50%;
+          left: 38%;
+          transform: translate(-50%, -50%);
+        }
+
+        .search-bar {
+          outline: none;
+          padding: 5px 20px;
+          border: {
+            width: 2px;
+            style: solid;
+            color: rgb(235, 235, 235);
+            radius: 4px;
+          }
+          background-color: rgba(245, 245, 245, 0.8);
+          text-align: center;
+
+          &::placeholder {
+            color: rgb(205, 205, 205);
+            font-weight: 500;
+          }
+        }
+      }
+
+      .nav-group {
+        img {
+          width: 25px;
+        }
+
+        a:nth-child(2),
+        a:nth-child(3) {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  .main-container {
+    display: flex;
+    max-width: 1024px;
+    margin: 40px auto 0;
+    padding: 0 30px;
+
+    main {
+      flex: 3;
+      height: auto;
+
+      .time-line {
+        border: 1px solid rgb(235, 235, 235);
+        background-color: #ffffff;
+
+        .post-header {
+          display: flex;
+          align-items: center;
+          height: 50px;
+          padding: 0 20px;
+          .writer-img {
+            width: 30px;
+            height: 30px;
+            background: url('../../../assets/images/dahyunKim/author-img.png')
+              no-repeat center;
+            background-size: cover;
+            border-radius: 50%;
+          }
+
+          h2 {
+            flex: 1;
+            margin-left: 10px;
+            font-size: 16px;
+          }
+
+          button {
+            background-color: transparent;
+            border: 0;
+          }
+        }
+
+        .post-img {
+          height: 600px;
+          background: url('../../../assets/images/dahyunKim/post1-img.jpg')
+            no-repeat center;
+          background-size: cover;
+        }
+
+        .post-footer {
+          .post-btns {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+            padding: 0 10px;
+            font-size: 24px;
+            color: rgb(155, 155, 155);
+
+            .btns-likes {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 15%;
+            }
+          }
+
+          .post-comments {
+            padding: {
+              left: 10px;
+              right: 10px;
+              bottom: 10px;
+            }
+
+            .comment {
+              margin-bottom: 5px;
+
+              .userId {
+                margin-right: 5px;
+              }
+            }
+          }
+
+          .post-form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            border-top: 1px solid rgb(235, 235, 235);
+
+            input {
+              border: none;
+
+              &:focus {
+                outline: none;
+                border: 2px solid rgb(195, 195, 195);
+              }
+            }
+
+            button {
+              border: none;
+              background-color: transparent;
+              color: rgb(57, 96, 202);
+            }
+          }
+        }
+      }
+    }
+
+    aside {
+      flex: 1.6;
+      margin-left: 30px;
+
+      .user-profile {
+        display: flex;
+        align-items: center;
+        height: 55px;
+
+        .profile-img {
+          width: 35px;
+          height: 35px;
+          background: url('../../../assets/images/dahyunKim/author-img.png')
+            no-repeat center;
+          background-size: cover;
+          border-radius: 50%;
+        }
+      }
+
+      .profile-info {
+        h2 {
+          font-size: 16px;
+        }
+
+        p {
+          color: rgb(175, 175, 175);
+        }
+      }
+    }
+  }
+}
