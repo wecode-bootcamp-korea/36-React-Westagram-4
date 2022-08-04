@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Nav from './components/Nav/Nav';
 
 import LoginBosung from './pages/bosungMoon/Login/Login';
 import MainBosung from './pages/bosungMoon/Main/Main';
@@ -13,6 +14,7 @@ import MainDahyun from './pages/dahyunKim/Main/Main';
 const Router = () => {
   return (
     <BrowserRouter>
+      <Nav />
       <Routes>
         <Route path="/login-bosung" element={<LoginBosung />} />
         <Route path="/main-bosung" element={<MainBosung />} />
