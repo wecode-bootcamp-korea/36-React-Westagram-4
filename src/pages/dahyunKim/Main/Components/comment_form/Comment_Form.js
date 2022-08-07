@@ -1,41 +1,24 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 
 import './form.scss';
 
 const CommentForm = ({ createComment }) => {
-  const commentInput = useRef();
+  const [comment, setComment] = useState('');
 
-  const [state, setState] = useState({
-    comment: '',
-  });
-
-  const updateState = ({ target }) => {
-    setState({
-      ...state,
-      [target.name]: target.value,
-      // comment: target.value,
-    });
-  };
+  const updateState = ({ target }) => setComment(target.value);
 
   const submitButton = e => {
     e.preventDefault();
-    if (state.comment.length < 5) {
-      commentInput.current.focus();
-      return;
-    }
 
-    createComment(state.comment);
-    setState({
-      comment: '',
-    });
+    createComment(comment);
+    setComment('');
   };
 
   return (
     <form className="post-form">
       <input
-        ref={commentInput}
         name="comment"
-        value={state.comment}
+        value={comment}
         type="text"
         placeholder="댓글 달기..."
         autoComplete="off"
