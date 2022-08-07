@@ -1,12 +1,8 @@
 import React from 'react';
 import './Login.scss';
 import Loginps from './Loginps';
-// import { Link } from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
 
 const LoginBosung = () => {
-  // const navigate = useNavigate();
-
   return (
     <div className="logIn">
       <div className="mainTitle">westagram</div>
