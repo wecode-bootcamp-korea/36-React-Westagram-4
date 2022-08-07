@@ -1,28 +1,28 @@
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 import './feed.scss';
-// import Comment from './Comment';
+import Comment from './Comment';
 
 const Feed = () => {
-  // const [comment, setComment] = useState('');
+  const [comment, setComment] = useState('');
 
-  // const changeHandler = event => {
-  //   setComment(event.target.value);
-  // };
+  const changeHandler = event => {
+    setComment(event.target.value);
+  };
 
-  // const [commentBox, setCommentBox] = useState([]);
+  const [commentBox, setCommentBox] = useState([]);
 
-  // function plus(event) {
-  //   event.preventDefault();
-  //   if (comment === '') {
-  //     return;
-  //   }
-  //   let a = [...commentBox];
-  //   a.push(comment);
-  //   setCommentBox(a);
-  //   setComment('');
-  // }
+  function plus(event) {
+    event.preventDefault();
+    if (comment === '') {
+      return;
+    }
+    let a = [...commentBox];
+    a.push(comment);
+    setCommentBox(a);
+    setComment('');
+  }
 
-  // const InputValue = comment.length >= 1;
+  const InputValue = comment.length >= 1;
 
   return (
     <div className="centerFrame">
@@ -53,12 +53,12 @@ const Feed = () => {
         </div>
       </div>
 
-      {/* <Comment comment="힘내요 화이팅!👍" />
+      <Comment comment="힘내요 화이팅!👍" />
       <Comment comment="위워크는 어떠신가요?" />
 
       {commentBox.map((comment, i) => {
         return <Comment key={i} comment={comment} />;
-      })} */}
+      })}
 
       <div className="commentBar">
         <form>
@@ -66,12 +66,12 @@ const Feed = () => {
             id="commentPlz"
             type="text"
             placeholder="댓글 달기..."
-            // value={comment}
-            // onChange={changeHandler}
+            value={comment}
+            onChange={changeHandler}
           />
           <button
-          // onClick={plus}
-          // className={InputValue ? 'post' : 'postDisabled'}
+            onClick={plus}
+            className={InputValue ? 'post' : 'postDisabled'}
           >
             게시
           </button>
