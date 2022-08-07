@@ -18,15 +18,20 @@ body {
     height: 500px;
     background-color: white;
 
-    input {
-      margin-bottom: 5px;
+    .loginButton {
+      margin: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
       width: 350px;
       height: 35px;
-      border: 1px solid #dbdbdb;
-      background-color: #fafafa;
+      font-size: 15px;
+      text-align: center;
+      background-color: #0095f6;
     }
 
-    button {
+    .loginButtonFalse {
       margin: 15px;
       padding: 10px;
       border: none;
@@ -39,10 +44,20 @@ body {
       background-color: #b2dffc;
     }
 
+    .inputIdPw {
+      margin-left: 15px;
+      padding: 10px;
+      margin-bottom: 5px;
+      width: 350px;
+      height: 35px;
+      border: 1px solid #dbdbdb;
+      background-color: #fafafa;
+    }
+
     .mainTitle {
       margin-bottom: 50px;
       font-size: 45px;
-      font-family: "Lobster", cursive;
+      font-family: 'Lobster', cursive;
       letter-spacing: -0.1ch;
       margin-top: 50px;
     }

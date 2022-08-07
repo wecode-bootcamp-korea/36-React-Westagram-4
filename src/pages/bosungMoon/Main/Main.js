@@ -3,7 +3,7 @@ import './Main.scss';
 import Feed from './Feed';
 import RightFeed from './RightFeed';
 
-const Main = () => {
+const MainBosung = () => {
   return (
     <>
       <nav className="top">
@@ -11,7 +11,7 @@ const Main = () => {
           <div className="mainBorder">
             <img
               className="instaTopImgInsta"
-              src="images/instagram.png"
+              src="images/bosungMoon/instagram.png"
               alt="인스타"
             />
           </div>
@@ -20,19 +20,27 @@ const Main = () => {
           </div>
         </div>
         <div className="barBorder">
-          <img className="search" src="images/search.png" alt="서치" />
+          <img
+            className="search"
+            src="images/bosungMoon/search.png"
+            alt="서치"
+          />
           <input type="text" id="searchbar" placeholder="검색" />
         </div>
         <div className="imgRightTop">
           <img
             className="instaTopImgExplore"
-            src="images/explore.png"
+            src="images/bosungMoon/explore.png"
             alt="탐색"
           />
-          <img className="instaTopImgHeart" src="images/love.png" alt="하트" />
+          <img
+            className="instaTopImgHeart"
+            src="images/bosungMoon/love.png"
+            alt="하트"
+          />
           <img
             className="instaTopImgMypage"
-            src="images/mapage.png"
+            src="images/bosungMoon/mapage.png"
             alt="마이페이지"
           />
         </div>
@@ -46,4 +54,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default MainBosung;

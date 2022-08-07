@@ -61,24 +61,26 @@
   }
 
   .commentBottom {
-    border-bottom: 1px solid #e6e6e6;
     padding-bottom: 7px;
+
+    .commentId {
+      font-weight: bold;
+    }
 
     .feedMiddleComment {
       margin-top: 10px;
       padding: 0 13px;
-      .commentId {
-        font-weight: bold;
-      }
-      .commentGray {
-        color: lightgray;
-      }
+    }
+    .commentGray {
+      color: lightgray;
     }
   }
 
   .commentBar {
     display: flex;
     width: 100%;
+    border-top: 1px solid #e6e6e6;
+
     #commentPlz {
       border-bottom: 1px solid #e6e6e6;
       border-top: none;
@@ -87,11 +89,11 @@
       height: 35px;
       padding-left: 10px;
       margin: 0%;
-      width: 430px;
+      width: 420px;
     }
 
-    #post {
-      background-color: white;
+    .post {
+      background-color: #0095f6;
       border-bottom: 1px solid #e6e6e6;
       border-top: none;
       border-left: none;
@@ -99,7 +101,18 @@
       color: #e6e6e6;
       height: 35px;
       padding-right: 10px;
-      width: 40px;
+      width: 47px;
+    }
+    .postDisabled {
+      background-color: #b2dffc;
+      border-bottom: 1px solid #e6e6e6;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      color: #e6e6e6;
+      height: 35px;
+      padding-right: 10px;
+      width: 47px;
     }
   }
 }

@@ -5,9 +5,9 @@ const RightFeed = () => {
   return (
     <div className="mainRight">
       <div className="mainRightHead">
-        <img src="images/me.jpeg" alt="나" />
+        <img src="images/bosungMoon/me.jpeg" alt="나" />
         <div className="rightHead">
-          <p className="bold">haydemMoon127</p>
+          <p className="bold">haydenMoon127</p>
           <p>문보성</p>
         </div>
       </div>
@@ -21,28 +21,28 @@ const RightFeed = () => {
         </div>
 
         <div className="mainMiddleMiddle">
-          <img src="images/marathon.jpeg" alt="나" />
+          <img src="images/bosungMoon/marathon.jpeg" alt="나" />
           <div className="rightMiddle">
             <p className="bold">full_runner</p>
             <p className="time">16분 전</p>
           </div>
         </div>
         <div className="mainMiddleMiddle">
-          <img src="images/pilates.jpeg" alt="나" />
+          <img src="images/bosungMoon/pilates.jpeg" alt="나" />
           <div className="rightMiddle">
             <p className="bold">pilasophy</p>
             <p className="time">3시간 전</p>
           </div>
         </div>
         <div className="mainMiddleMiddle">
-          <img src="images/sebu.jpeg" alt="나" />
+          <img src="images/bosungMoon/sebu.jpeg" alt="나" />
           <div className="rightMiddle">
             <p className="bold">sebu_chill</p>
             <p className="time">20시간 전</p>
           </div>
         </div>
         <div className="mainMiddleMiddle">
-          <img src="images/serf.jpeg" alt="나" />
+          <img src="images/bosungMoon/serf.jpeg" alt="나" />
           <div className="rightMiddle">
             <p className="bold">surf_yangyang</p>
             <p className="time">23시간 전</p>
@@ -61,7 +61,7 @@ const RightFeed = () => {
         <div className="mainBottomBottom">
           <div className="realLast">
             <div className="bottomLast">
-              <img src="images/weight.jpeg" alt="나" />
+              <img src="images/bosungMoon/weight.jpeg" alt="나" />
               <div className="rightBottomBottom">
                 <p className="bold">weight_man</p>
                 <p
@@ -80,7 +80,7 @@ const RightFeed = () => {
           </div>
           <div className="realLast">
             <div className="bottomLast">
-              <img src="images/tan.jpeg" alt="나" />
+              <img src="images/bosungMoon/tan.jpeg" alt="나" />
               <div className="rightBottomBottom">
                 <p className="bold">tanning_101</p>
                 <p
@@ -99,7 +99,7 @@ const RightFeed = () => {
           </div>
           <div className="realLast">
             <div className="bottomLast">
-              <img src="images/afternoon.jpeg" alt="나" />
+              <img src="images/bosungMoon/afternoon.jpeg" alt="나" />
               <div className="rightBottomBottom">
                 <p className="bold">tea_afternoon</p>
                 <p
