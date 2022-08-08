@@ -1,5 +1,5 @@
-import './list.scss';
 import CommentItem from './Comment_Item';
+import './list.scss';
 
 const CommentList = ({ commentList, removeComment, updateComment }) => {
   return (

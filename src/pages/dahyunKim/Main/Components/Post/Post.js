@@ -1,8 +1,8 @@
 import { useState, useRef } from 'react';
-import './Post.scss';
 
 import CommentList from '../comment_list/Comment_List';
 import CommentForm from '../comment_form/Comment_Form';
+import './Post.scss';
 
 const Post = () => {
   const [data, setData] = useState([]);

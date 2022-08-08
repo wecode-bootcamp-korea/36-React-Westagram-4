@@ -1,4 +1,3 @@
-// import { useState } from 'react';
 const CommentItem = ({ id, comment, removeComment, updateComment }) => {
   const removeOnClick = () => {
     if (window.confirm('정말 삭제하시겠습니까?')) {
