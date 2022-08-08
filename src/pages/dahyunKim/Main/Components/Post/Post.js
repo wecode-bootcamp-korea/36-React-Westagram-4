@@ -18,6 +18,18 @@ const Post = () => {
     setData([newComment, ...data]);
   };
 
+  const removeComment = itemId => {
+    setData(data.filter(item => item.id !== itemId));
+  };
+
+  const updateComment = (itemId, updatedContent) => {
+    setData(
+      data.map(item =>
+        item.id === itemId ? { ...item, comment: updatedContent } : item
+      )
+    );
+  };
+
   return (
     <li>
       <article className="post-1">
@@ -40,7 +52,11 @@ const Post = () => {
           </div>
           <div className="post-comments">
             <ol>
-              <CommentList commentList={data} />
+              <CommentList
+                commentList={data}
+                removeComment={removeComment}
+                updateComment={updateComment}
+              />
             </ol>
             <CommentForm createComment={createComment} />
           </div>
