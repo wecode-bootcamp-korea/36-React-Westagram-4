@@ -1,0 +1,14 @@
+.mainApp {
+  aside {
+    footer a {
+      font-size: 14px;
+      color: rgb(175, 175, 175);
+      text-decoration: none;
+
+      &:not(:last-of-type)::after {
+        content: '\00B7';
+        margin: 0 4px;
+      }
+    }
+  }
+}

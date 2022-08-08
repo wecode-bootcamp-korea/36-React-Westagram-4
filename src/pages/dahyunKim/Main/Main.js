@@ -1,5 +1,6 @@
 import Nav from './Components/Nav/Nav';
 import Post from './Components/Post/Post';
+import Footer from './Components/Footer/Footer';
 import './Main.scss';
 
 const MainDahyun = () => {
@@ -133,43 +134,7 @@ const MainDahyun = () => {
               </ul>
             </main>
           </section>
-          <footer className="footer">
-            <a href="#!" target="_blank">
-              Instagram 정보
-            </a>
-            <a href="#!" target="_blank">
-              지원
-            </a>
-            <a href="#!" target="_blank">
-              홍보 센터
-            </a>
-            <a href="#!" target="_blank">
-              API
-            </a>{' '}
-            <br />
-            <a href="#!" target="_blank">
-              채용 정보
-            </a>
-            <a href="#!" target="_blank">
-              개인정보처리방침
-            </a>
-            <a href="#!" target="_blank">
-              약관
-            </a>{' '}
-            <br />
-            <a href="#!" target="_blank">
-              디렉터리
-            </a>
-            <a href="#!" target="_blank">
-              프로필
-            </a>
-            <a href="#!" target="_blank">
-              해시태그
-            </a>
-            <a href="#!" target="_blank">
-              언어
-            </a>
-          </footer>
+          <Footer />
         </aside>
       </div>
     </div>

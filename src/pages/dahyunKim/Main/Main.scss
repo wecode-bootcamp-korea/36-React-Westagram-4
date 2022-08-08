@@ -129,6 +129,11 @@
           color: rgb(235, 235, 235);
         }
         background-color: #ffffff;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+          display: none !important;
+        }
 
         header {
           display: flex;
@@ -195,17 +200,6 @@
               cursor: pointer;
             }
           }
-        }
-      }
-
-      footer a {
-        font-size: 14px;
-        color: rgb(175, 175, 175);
-        text-decoration: none;
-
-        &:not(:last-of-type)::after {
-          content: '\00B7';
-          margin: 0 4px;
         }
       }
     }
