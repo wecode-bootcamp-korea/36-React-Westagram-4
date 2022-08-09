@@ -4,7 +4,7 @@ import CommentList from './comment_list/Comment_List';
 import CommentForm from './comment_form/Comment_Form';
 import './Post.scss';
 
-const Post = ({ userName, imgUrl, comment }, setPostData) => {
+const Post = ({ userName, imgUrl, comment }) => {
   const [commentData, setCommentData] = useState(comment);
 
   const dataId = useRef(commentData.length);

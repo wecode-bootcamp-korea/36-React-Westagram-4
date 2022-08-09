@@ -34,7 +34,6 @@ const FOOTER_LIST = [
     id: 4,
     link: '#!',
     content: 'API',
-    isBr: true,
   },
   {
     id: 5,
@@ -50,7 +49,6 @@ const FOOTER_LIST = [
     id: 7,
     link: '#!',
     content: '약관',
-    br: true,
   },
   {
     id: 8,
