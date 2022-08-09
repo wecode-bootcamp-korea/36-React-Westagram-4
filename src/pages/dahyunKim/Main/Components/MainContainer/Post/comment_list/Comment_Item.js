@@ -1,4 +1,10 @@
-const CommentItem = ({ id, comment, removeComment, updateComment }) => {
+const CommentItem = ({
+  id,
+  userName,
+  content,
+  removeComment,
+  updateComment,
+}) => {
   const removeOnClick = () => {
     if (window.confirm('정말 삭제하시겠습니까?')) {
       removeComment(id);
@@ -6,15 +12,16 @@ const CommentItem = ({ id, comment, removeComment, updateComment }) => {
   };
 
   const updateOnClick = () => {
-    const updatedContent = prompt('내용을 수정하세요.', comment);
+    const updatedContent = prompt('내용을 수정하세요.', content);
     updateComment(id, updatedContent);
   };
 
   return (
     <li className="comment">
       <div className="contents">
-        <span className="userId">Pulan</span>
-        <span className="content">{comment}</span>
+        <span className="userId">{userName}</span>
+        <span className="content">{content}</span>
+        <span>고유 값: {id}</span>
       </div>
       <div className="btns">
         <button className="updateContent" onClick={updateOnClick}>

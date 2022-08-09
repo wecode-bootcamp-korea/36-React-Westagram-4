@@ -1,0 +1,200 @@
+.mainApp {
+  .main-container {
+    display: flex;
+    max-width: 986px;
+    margin: 40px auto 0;
+    padding: 0 30px;
+
+    .main-content {
+      flex: 3;
+      height: auto;
+    }
+
+    aside {
+      flex: 1.6;
+      margin-left: 30px;
+
+      .user-profile {
+        display: flex;
+        align-items: center;
+        height: 55px;
+        padding: 10px;
+        background-color: inherit;
+
+        .profile-img {
+          width: 35px;
+          height: 35px;
+          background: url('../../../../../assets/images/dahyunKim/author-img.png')
+            no-repeat center;
+          background-size: cover;
+          border-radius: 50%;
+        }
+
+        .profile-info {
+          h2 {
+            font-size: 14px;
+          }
+
+          p {
+            color: rgb(175, 175, 175);
+          }
+        }
+      }
+
+      .story {
+        height: 200px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: {
+          width: 2px;
+          style: solid;
+          color: rgb(235, 235, 235);
+        }
+        background-color: #ffffff;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+          display: none !important;
+        }
+
+        .story-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          h2 {
+            font-size: 14px;
+            color: rgb(175, 175, 175);
+          }
+
+          button {
+            border: none;
+            background-color: transparent;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+          }
+        }
+
+        .story-list {
+          .updated-users {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 5px;
+
+            .updated-user {
+              display: flex;
+            }
+
+            .updated-user__img {
+              width: 25px;
+              height: 25px;
+              background: url('../../../../../assets/images/dahyunKim/author-img.png')
+                no-repeat center;
+              background-size: cover;
+              border-radius: 50%;
+            }
+
+            .updated-user__info {
+              margin-left: 10px;
+
+              h2 {
+                font-size: 14px;
+              }
+
+              span {
+                font-size: 13px;
+                font-weight: 500;
+                color: rgb(175, 175, 175);
+              }
+            }
+          }
+        }
+      }
+
+      .suggestion {
+        height: 160px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: {
+          width: 2px;
+          style: solid;
+          color: rgb(235, 235, 235);
+        }
+        background-color: #ffffff;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+          display: none !important;
+        }
+
+        header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 20px;
+
+          h2 {
+            font-size: 14px;
+          }
+
+          button {
+            border: none;
+            background-color: transparent;
+            font: {
+              size: 14px;
+              weight: 500;
+            }
+            cursor: pointer;
+          }
+        }
+
+        .suggestion-list {
+          .updated-users {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 8px;
+
+            .updated-user {
+              display: flex;
+
+              .updated-user__img {
+                width: 25px;
+                height: 25px;
+                background: url('../../../../../assets/images/dahyunKim/author-img.png')
+                  no-repeat center;
+                background-size: cover;
+                border: {
+                  radius: 50%;
+                }
+              }
+
+              .updated-user__info {
+                margin-left: 10px;
+
+                h2 {
+                  font-size: 14px;
+                }
+
+                span {
+                  font-size: 13px;
+                  font-weight: 500;
+                  color: rgb(175, 175, 175);
+                }
+              }
+            }
+
+            button {
+              border: none;
+              background-color: transparent;
+              font-size: 14px;
+              font-weight: 500;
+              color: rgb(93, 135, 252);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

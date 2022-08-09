@@ -4,43 +4,48 @@ import CommentList from './comment_list/Comment_List';
 import CommentForm from './comment_form/Comment_Form';
 import './Post.scss';
 
-const Post = () => {
-  const [data, setData] = useState([]);
+const Post = ({ userName, imgUrl, comment }, setPostData) => {
+  const [commentData, setCommentData] = useState(comment);
 
-  const dataId = useRef(0);
+  const dataId = useRef(commentData.length);
 
-  const createComment = comment => {
-    const newComment = {
-      comment,
-      id: dataId.current,
-    };
+  const createComment = content => {
     dataId.current += 1;
-    setData([newComment, ...data]);
+    const newComment = {
+      id: dataId.current,
+      content,
+    };
+    setCommentData([newComment, ...commentData]);
   };
 
   const removeComment = itemId => {
-    setData(data.filter(item => item.id !== itemId));
+    setCommentData(commentData.filter(item => item.id !== itemId));
   };
 
   const updateComment = (itemId, updatedContent) => {
-    setData(
-      data.map(item =>
-        item.id === itemId ? { ...item, comment: updatedContent } : item
+    setCommentData(
+      commentData.map(item =>
+        item.id === itemId ? { ...item, content: updatedContent } : item
       )
     );
   };
 
   return (
-    <li>
-      <article className="post-1">
+    <li className="post">
+      <article>
         <header className="post-header">
           <div className="writer-img" />
-          <h2>Pulan</h2>
+          <h2>{userName}</h2>
           <button type="button">
             <i className="fa-solid fa-ellipsis" />
           </button>
         </header>
-        <div className="post-img" />
+        <div
+          className="post-img"
+          style={{
+            backgroundImage: `url(${imgUrl})`,
+          }}
+        />
         <footer className="post-footer">
           <div className="post-btns">
             <div className="btns-likes">
@@ -53,7 +58,8 @@ const Post = () => {
           <div className="post-comments">
             <ol>
               <CommentList
-                commentList={data}
+                userName={userName}
+                commentList={commentData}
                 removeComment={removeComment}
                 updateComment={updateComment}
               />

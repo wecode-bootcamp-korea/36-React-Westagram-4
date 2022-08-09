@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "userName": "Pulan",
+    "imgUrl": "images/dahyunKim/post-img/post-1.jpg",
+    "comment": [
+      {
+        "id": 1,
+        "content": "where"
+      },
+      {
+        "id": 2,
+        "content": "how"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "userName": "Plu457",
+    "imgUrl": "images/dahyunKim/post-img/post-2.jpg",
+    "comment": [
+      {
+        "id": 1,
+        "content": "are"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "userName": "MoonHayden",
+    "imgUrl": "images/dahyunKim/post-img/post-3.jpg",
+    "comment": [
+      {
+        "id": 1,
+        "content": "you"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "userName": "Sodalite1204",
+    "imgUrl": "images/dahyunKim/post-img/post-4.jpg",
+    "comment": [
+      {
+        "id": 1,
+        "content": "from"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "userName": "Bosung",
+    "imgUrl": "images/dahyunKim/post-img/post-5.jpg",
+    "comment": [
+      {
+        "id": 1,
+        "content": "I"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "userName": "Kyeongyong",
+    "imgUrl": "images/dahyunKim/post-img/post-6.jpg",
+    "comment": [
+      {
+        "id": 1,
+        "content": "am"
+      }
+    ]
+  }
+]
