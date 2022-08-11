@@ -38,7 +38,7 @@ const MainDahyun = () => {
             item.userName.toLowerCase().includes(checkSearch))
       )
     );
-  }, [checkSearch]);
+  }, [checkSearch, postData]);
 
   return (
     <div className="mainApp">
