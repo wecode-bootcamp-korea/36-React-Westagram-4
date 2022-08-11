@@ -1,0 +1,120 @@
+.centerFrame {
+  background-color: white;
+  width: 470px;
+  border: 1.5px solid #e6e6e6;
+  margin-top: 20px;
+
+  .feedsheader img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-right: 10px;
+  }
+
+  .feedsheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+    height: 45px;
+    .headerMe {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+
+  .feedMiddle {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    height: 30px;
+  }
+  .feedMiddle img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .feedMiddleMiddle {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+
+    .leftBottomBottom {
+      padding: 0 5px;
+      font-size: 14px;
+    }
+    .leftBottomBottom span {
+      font-weight: bold;
+    }
+  }
+
+  .feedMiddleMiddle img {
+    width: 25px;
+    border-radius: 50%;
+    height: 25px;
+  }
+
+  .travel {
+    width: 100%;
+    height: 500px;
+  }
+
+  .commentBottom {
+    padding-bottom: 7px;
+
+    .commentId {
+      font-weight: bold;
+    }
+
+    .feedMiddleComment {
+      margin-top: 10px;
+      padding: 0 13px;
+    }
+    .commentGray {
+      color: lightgray;
+    }
+  }
+
+  .commentBar {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #e6e6e6;
+
+    #commentPlz {
+      border-bottom: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      height: 35px;
+      padding-left: 10px;
+      margin: 0%;
+      width: 420px;
+    }
+
+    .post {
+      background-color: #0095f6;
+      border-bottom: 1px solid #e6e6e6;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      color: #e6e6e6;
+      height: 35px;
+      padding-right: 10px;
+      width: 47px;
+    }
+    .postDisabled {
+      background-color: #b2dffc;
+      border-bottom: 1px solid #e6e6e6;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      color: #e6e6e6;
+      height: 35px;
+      padding-right: 10px;
+      width: 47px;
+    }
+  }
+}

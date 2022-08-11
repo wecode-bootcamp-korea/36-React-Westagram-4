@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "haydenMoon127",
+    "img": "images/bosungMoon/me.jpeg",
+    "postImg": "images/bosungMoon/wine.jpeg",
+    "defaultComment1": "위워크는 어떠신가요?",
+    "defaultComment2": "힘내요 화이팅"
+  },
+  {
+    "id": 2,
+    "name": "JasonMoon815",
+    "img": "images/bosungMoon/coffee.jpg",
+    "postImg": "images/bosungMoon/beer.jpeg",
+    "defaultComment1": "프로젝트 화이팅",
+    "defaultComment2": "한달간의 여정 할수있어"
+  },
+  {
+    "id": 3,
+    "name": "johnsonMoon1014",
+    "img": "images/bosungMoon/kimbob.jpg",
+    "postImg": "images/bosungMoon/hotel.jpeg",
+    "defaultComment1": "여태까지 잘 해왔자나",
+    "defaultComment2": "1년 2년 차근히 꾸준히"
+  }
+]
