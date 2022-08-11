@@ -33,7 +33,9 @@ const MainDahyun = () => {
     setCopyData(
       copy.filter(
         item =>
-          item.userName === checkSearch || item.userName.includes(checkSearch)
+          checkSearch.length >= 2 &&
+          (item.userName.toLowerCase() === checkSearch ||
+            item.userName.toLowerCase().includes(checkSearch))
       )
     );
   }, [checkSearch]);
