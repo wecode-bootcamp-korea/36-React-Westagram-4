@@ -77,3 +77,8 @@
 .main {
   @include mainScss;
 }
+
+.feeds {
+  display: flex;
+  flex-direction: column;
+}

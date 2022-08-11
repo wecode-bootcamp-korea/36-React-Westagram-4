@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './feed.scss';
 import Comment from './Comment';
 
-const Feed = () => {
+const Feed = ({ feed }) => {
   const [comment, setComment] = useState('');
 
   const changeHandler = event => {
@@ -28,12 +28,12 @@ const Feed = () => {
     <div className="centerFrame">
       <div className="feedsheader">
         <div className="headerMe">
-          <img src="images/bosungMoon/me.jpeg" alt="나" />
+          <img src={feed.img} alt="나" />
           <p>haydenMoon127</p>
         </div>
         <img src="images/bosungMoon/more.png" alt="more" />
       </div>
-      <img className="travel" src="images/bosungMoon/travel.jpeg" alt="나" />
+      <img className="travel" src={feed.postImg} alt="나" />
       <div>
         <div className="feedMiddle">
           <div>
@@ -53,8 +53,8 @@ const Feed = () => {
         </div>
       </div>
 
-      <Comment comment="힘내요 화이팅!👍" />
-      <Comment comment="위워크는 어떠신가요?" />
+      <Comment comment={feed.defaultComment1} />
+      <Comment comment={feed.defaultComment2} />
 
       {commentBox.map((comment, i) => {
         return <Comment key={i} comment={comment} />;

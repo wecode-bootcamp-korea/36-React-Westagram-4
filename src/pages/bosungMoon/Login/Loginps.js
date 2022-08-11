@@ -37,11 +37,39 @@ const Loginps = () => {
       <button
         className={InputValue ? 'loginButton' : 'loginButtonFalse'}
         disabled={InputValue ? false : true}
-        onClick={() => {
-          navigate('/main-bosung');
+        onClick={e => {
+          e.preventDefault();
+          fetch('http://10.58.4.241:3000/auth/signin', {
+            method: 'post',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: id, password: password }),
+          })
+            .then(response => response.json())
+            .then(data => {
+              console.log(data);
+              localStorage.setItem('Token', data.accessToken);
+              navigate('/main-bosung');
+            });
         }}
       >
         <strong>로그인</strong>
+      </button>
+      <button
+        className="loginButton"
+        onClick={e => {
+          e.preventDefault();
+          fetch('http://10.58.4.241:3000/auth/signup', {
+            method: 'post',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: id, password: password }),
+          })
+            .then(response => response.json())
+            .then(data => {
+              console.log(data);
+            });
+        }}
+      >
+        <strong>회원가입</strong>
       </button>
     </form>
   );

@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Main.scss';
 import Feed from './Feed';
 import RightFeed from './RightFeed';
 
 const MainBosung = () => {
+  const [feedDataList, setFeedDataList] = useState([]);
+  useEffect(() => {
+    fetch('/data/FeedMockData.json')
+      .then(response => response.json())
+      .then(result => setFeedDataList(result));
+  }, []);
+
   return (
     <>
       <nav className="top">
@@ -47,7 +54,12 @@ const MainBosung = () => {
       </nav>
 
       <div className="main">
-        <Feed />
+        <div className="feeds">
+          {feedDataList.map((result, i) => {
+            const feed = feedDataList[i];
+            return <Feed key={i} feed={feed} />;
+          })}
+        </div>
         <RightFeed />
       </div>
     </>

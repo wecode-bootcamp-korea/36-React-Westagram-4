@@ -2,6 +2,7 @@
   background-color: white;
   width: 470px;
   border: 1.5px solid #e6e6e6;
+  margin-top: 20px;
 
   .feedsheader img {
     width: 30px;
@@ -58,6 +59,7 @@
 
   .travel {
     width: 100%;
+    height: 500px;
   }
 
   .commentBottom {
@@ -82,7 +84,7 @@
     border-top: 1px solid #e6e6e6;
 
     #commentPlz {
-      border-bottom: 1px solid #e6e6e6;
+      border-bottom: none;
       border-top: none;
       border-left: none;
       border-right: none;

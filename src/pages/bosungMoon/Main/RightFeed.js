@@ -31,7 +31,7 @@ const RightFeed = () => {
         <div className="mainMiddleMiddle">
           <img src="images/bosungMoon/pilates.jpeg" alt="나" />
           <div className="rightMiddle">
-            <p className="bold">pilasophy</p>
+            <p className="bold">philasophy</p>
             <p className="time">3시간 전</p>
           </div>
         </div>
