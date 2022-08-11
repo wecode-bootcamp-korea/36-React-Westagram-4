@@ -3,9 +3,13 @@ import { Link } from 'react-router-dom';
 
 import './Nav.scss';
 
-const Nav = () => {
+const Nav = ({ setCheckSearch }) => {
   const [hasValue, setHasValue] = useState(false);
-  const handleInputChange = () => setHasValue(true);
+
+  const handleInputChange = e => {
+    setCheckSearch(e.target.value);
+    setHasValue(true);
+  };
 
   return (
     <header className="main-header">
@@ -24,7 +28,7 @@ const Nav = () => {
           </h1>
         </div>
         <div className="search-group">
-          {hasValue ? null : <i className="fa-solid fa-magnifying-glass" />}
+          {hasValue ? '' : <i className="fa-solid fa-magnifying-glass" />}
           <input
             className="search-bar"
             type="text"

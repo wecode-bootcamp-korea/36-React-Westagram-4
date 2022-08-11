@@ -8,6 +8,8 @@ import './Main.scss';
 
 const MainDahyun = () => {
   const [postData, setPostData] = useState([]);
+  const [checkSearch, setCheckSearch] = useState('');
+  const [copyData, setCopyData] = useState([]);
 
   useEffect(() => {
     const checkStatus = res => {
@@ -26,10 +28,20 @@ const MainDahyun = () => {
       .catch(error => console.error(error));
   }, []);
 
+  useEffect(() => {
+    const copy = [...postData];
+    setCopyData(
+      copy.filter(
+        item =>
+          item.userName === checkSearch || item.userName.includes(checkSearch)
+      )
+    );
+  }, [checkSearch]);
+
   return (
     <div className="mainApp">
-      <Nav />
-      <MainContainer postData={postData} />
+      <Nav setCheckSearch={setCheckSearch} />
+      <MainContainer postData={copyData.length > 0 ? copyData : postData} />
     </div>
   );
 };
