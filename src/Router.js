@@ -9,6 +9,8 @@ import MainKyeongyong from './pages/kyeongyongSong/Main/Main';
 
 import LoginDahyun from './pages/dahyunKim/Login/Login';
 import MainDahyun from './pages/dahyunKim/Main/Main';
+import SignUpDahyun from './pages/dahyunKim/SignUp/Sign';
+import PlusPostPage from './pages/dahyunKim/Main/Components/PlusPostPage/PlusPostPage';
 
 const Router = () => {
   return (
@@ -21,7 +23,9 @@ const Router = () => {
         <Route path="/main-kyeongyong" element={<MainKyeongyong />} />
 
         <Route path="/login-dahyun" element={<LoginDahyun />} />
+        <Route path="/signup-dahyun" element={<SignUpDahyun />} />
         <Route path="/main-dahyun" element={<MainDahyun />} />
+        <Route path="/PlusPostPage" element={<PlusPostPage />} />
       </Routes>
     </BrowserRouter>
   );

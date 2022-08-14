@@ -1,0 +1,15 @@
+.comment {
+  display: flex;
+  margin-bottom: 5px;
+
+  .contents {
+    flex: 1;
+
+    .userId {
+      margin-right: 5px;
+    }
+  }
+
+  .btns {
+  }
+}
