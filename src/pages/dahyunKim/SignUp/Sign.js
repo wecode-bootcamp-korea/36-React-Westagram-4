@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 
-import './Login.scss';
+import './Sign.scss';
 
-const LoginDahyun = () => {
+const SignUpDahyun = () => {
   const [loginData, setLoginData] = useState({
+    name: '',
     email: '',
+    profile_image: '',
     password: '',
   });
 
@@ -14,11 +16,11 @@ const LoginDahyun = () => {
     setLoginData({ ...loginData, [name]: value });
   };
 
-  const { email, password } = loginData;
+  const { name, email, profile_image, password } = loginData;
 
   const isActive = email.includes('@') && password.length >= 5;
-
   const navigate = useNavigate();
+
   const goToMain = () => {
     navigate('/main-dahyun');
   };
@@ -41,15 +43,17 @@ const LoginDahyun = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          name: name,
           email: email,
+          profile_image: profile_image,
           password: password,
         }),
       });
     };
 
-    checkData('http://10.58.7.140:3000/user/logIn')
+    checkData('http://10.58.7.240:3000/users/sign-up')
       .then(checkStatus)
-      .then(res => localStorage.setItem('message', res.message))
+      .then(res => localStorage.setItem('accessToken', res.accessToken))
       .catch(console.error);
   };
 
@@ -60,8 +64,20 @@ const LoginDahyun = () => {
         <form className="loginForm">
           <input
             type="text"
+            name="name"
+            placeholder="이름"
+            onChange={loginDataSave}
+          />
+          <input
+            type="text"
             name="email"
             placeholder="전화번호, 사용자 이름또는 이메일"
+            onChange={loginDataSave}
+          />
+          <input
+            type="text"
+            name="profile_image"
+            placeholder="이미지 주소"
             onChange={loginDataSave}
           />
           <input
@@ -76,7 +92,7 @@ const LoginDahyun = () => {
             disabled={!isActive}
             onClick={checkLoginData}
           >
-            로그인
+            회원가입
           </button>
         </form>
         <div className="midLine">
@@ -94,4 +110,4 @@ const LoginDahyun = () => {
   );
 };
 
-export default LoginDahyun;
+export default SignUpDahyun;

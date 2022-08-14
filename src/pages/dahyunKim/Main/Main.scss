@@ -1,3 +1,16 @@
 .mainApp {
   background-color: rgb(245, 245, 245);
+
+  .plusDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .plusPost {
+      padding: 10px;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
 }

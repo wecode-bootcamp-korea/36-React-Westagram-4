@@ -55,6 +55,9 @@ const Post = ({ userName, imgUrl, comment }) => {
             </div>
             <i className="fa-regular fa-bookmark" />
           </div>
+          <div className="introduce">
+            <p>Hello</p>
+          </div>
           <div className="post-comments">
             <ol>
               <CommentList
