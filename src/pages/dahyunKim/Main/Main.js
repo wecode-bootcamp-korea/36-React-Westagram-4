@@ -34,6 +34,7 @@ const MainDahyun = () => {
       .then(checkStatus)
       .then(uploadPostData)
       .catch(error => console.error(error));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [postData.items]);
 
   const searchFilter = postData.postList.filter(item =>
@@ -43,7 +44,14 @@ const MainDahyun = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const onScroll = () => {
     const { items } = postData;
-    const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
+    const { documentElement, body } = document;
+
+    const scrollTop = Math.max(documentElement.scrollTop, body.scrollTop);
+    const clientHeight = documentElement.clientHeight;
+    const scrollHeight = Math.max(
+      documentElement.scrollHeight,
+      body.scrollHeight
+    );
 
     const scrollRatio =
       Math.ceil(scrollTop) + Math.ceil(clientHeight) >= scrollHeight;
